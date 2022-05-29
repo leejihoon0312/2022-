@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://kit.fontawesome.com/ebea5ebe79.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="afterLogin.css">
+  <link rel="stylesheet" href="clickSoftware.css">
+  <link rel="stylesheet" href="pageSelect.css">
+  <link rel="stylesheet" href="selectAlgorithm.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    var algorithm= {
+      파일명: "알고리즘 슈도코드",
+      문서타입: ".docx"
+    };
+    $(document).ready(function(){
+      $(".download").click(function(){
+        confirm(algorithm.파일명+algorithm.문서타입+'을 다운로드 하시겠습니까?');
+      });
+      
+    });  //객체 및 제이쿼리 사용
+  </script>
+</head>
+<body>
+  <nav class="navigation">
+    
+    <div class="nav_logo">
+      <i class="fa-solid fa-person-falling"></i>
+      
+      <a href="#">자유로운 대학생</a>
+    </div>
+
+    <ul class="nav_menu">
+      <li class="nav_menu_item"><a href="#">인문대</a> </li>
+      <li class="nav_menu_item"><a href="#">사과대</a> </li>
+      <li class="nav_menu_item software"><a href="clickSoftware.html">소경대</a> </li>
+      <li class="nav_menu_item"><a href="#">융과대</a> </li>
+      <li class="nav_menu_item"><a href="#">창의공대</a> </li>
+      <li class="nav_menu_item"><a href="#">관광문화대</a> </li>
+      <li class="nav_menu_item"><a href="#">예술체육대</a> </li>
+   </ul>
+
+   <div class="nav_buttons">
+    <div class="nav_login-btn"><a href="login.html"><i class="fa-solid fa-right-to-bracket"></i></a>
+      
+     </div>
+  
+     
+  
+     <div class="nav_logout-btn"><a href="index.html"><i class="fa-solid fa-right-from-bracket"></i></a>
+      
+     </div>
+
+     <div class="nav_toggle-btn">
+      <i class="fas fa-bars"></i>
+     </div>
+   </div>
+  </nav>
+
+  <div class="top">
+    <img src="top.png" class="top_image"/>
+  </div>
+
+  <div class="middle">
+    
+
+    <div class="show_assignment">
+      <div class="title">
+        <h1>[알고리즘] 동적프로그래밍 슈도코드입니다</h1>
+      </div>
+      <div class="download">
+         
+         <i class="fa-solid fa-download"></i>
+      </div>
+      <div class="description">
+        <div class="comment">잘 쓰세요~~</div>
+      </div>
+
+
+
+      <div class="select_next_page">
+        <i class="fa-solid fa-angle-up"><span class="page_move">다음글로 이동</span></i>
+      </div>
+      <div class="select_previous_page">
+        <i class="fa-solid fa-angle-down"><span class="page_move">이전글로 이동</span></i>
+      </div>
+
+      
+    </div> 
+
+  
+
+  </div>
+
+  <div class="bottom">
+    <div class="temp">
+      <div class="bottom_icon"><a href="https://stackoverflow.com/" target="_blank"><i class="fa-brands fa-stack-overflow"><span class="bottom_icon_padding">Stack</span></i></a></div>
+      <div class="bottom_icon"><a href="https://github.com/"  target="_blank" ><i class="fa-brands fa-github"><span class="bottom_icon_padding">Github</span> </i></a></div>
+      <div class="bottom_icon"><a href="http://www.riss.kr/index.do" target="_blank"><i class="fa-solid fa-landmark"><span class="bottom_icon_padding">Riss</span> </i></a></div>
+      <div class="bottom_icon"><a href="https://pixlr.com/kr/" target="_blank"><i class="fa-brands fa-pix"><span class="bottom_icon_padding">PIXLR</span> </i></a></div>
+      <div class="bottom_icon"><a href="https://kosis.kr/index/index.do" target="_blank"><i class="fa-solid fa-percent"><span class="bottom_icon_padding">국가통계포털</span> </i></a></div>
+    </div>
+  </div>
+  <script src="clickMenu.js" type="text/javascript"></script>
+</body>
+</html>
